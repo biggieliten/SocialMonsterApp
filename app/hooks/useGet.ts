@@ -18,12 +18,7 @@ export const useGet = <T>(
       setError(null);
 
       try {
-        const response = await fetch(url, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const response = await fetch(url);
         if (!response.ok) {
           throw new Error(
             `An error occurred while fetching the data: ${response.statusText}`
@@ -31,6 +26,7 @@ export const useGet = <T>(
         }
 
         const jsonData = await response.json();
+        console.log(jsonData, "jsonData", typeof jsonData, "typeof jsondata");
 
         setData(jsonData);
       } catch (error: any) {

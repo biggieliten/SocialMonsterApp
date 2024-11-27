@@ -4,7 +4,7 @@ import { Monster, MonsterContextType } from "../types/types";
 const MonsterContext = createContext({} as MonsterContextType);
 
 export const MonsterProvider = ({ children }: any) => {
-  const [currentMonster, setCurrentMonster] = useState<any>();
+  const [currentMonster, setCurrentMonster] = useState<Monster>();
 
   return (
     <MonsterContext.Provider value={{ currentMonster, setCurrentMonster }}>

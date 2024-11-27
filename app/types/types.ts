@@ -21,6 +21,6 @@ export type Monster = {
 };
 
 export type MonsterContextType = {
-  currentMonster: Monster;
+  currentMonster?: Monster;
   setCurrentMonster: (monster: Monster) => void;
 };
