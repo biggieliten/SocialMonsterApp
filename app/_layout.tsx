@@ -1,12 +1,13 @@
 import { Stack } from "expo-router";
-import { MonsterProvider } from "./state/MonsterContext";
+import { CurrentMonsterProvider } from "./state/CurrentMonsterContext";
 
 export default function RootLayout() {
   return (
-    <MonsterProvider>
+    <CurrentMonsterProvider>
       <Stack>
+        {/* <Stack.Screen name="(drawers)" options={{ headerShown: false }} /> */}
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
-    </MonsterProvider>
+    </CurrentMonsterProvider>
   );
 }

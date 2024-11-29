@@ -8,8 +8,7 @@ export type Post = {
   id: number;
   title?: string;
   text?: string;
-  authorId: number;
-
+  authorId?: number;
   comments?: Comment[];
 };
 
@@ -20,7 +19,9 @@ export type Monster = {
   eyes: number;
 };
 
-export type MonsterContextType = {
+export type CurrentMonsterContextType = {
   currentMonster?: Monster;
   setCurrentMonster: (monster: Monster) => void;
 };
+
+export type MonsterContextType = {};

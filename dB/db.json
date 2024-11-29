@@ -81,24 +81,6 @@
       ]
     },
     {
-      "id": 20,
-      "title": "Ett äventyr i skogen",
-      "text": "Jag hittade ett märkligt träd som verkade leva!",
-      "authorId": 1,
-      "comments": [
-        {
-          "id": 1,
-          "text": "Låter spännande, vilket träd var det?",
-          "authorId": 2
-        },
-        {
-          "id": 2,
-          "text": "Var försiktig nästa gång!",
-          "authorId": 5
-        }
-      ]
-    },
-    {
       "id": 2,
       "title": "Ett hav fullt av färger",
       "text": "Havet skiftade i regnbågens färger idag. Magiskt!",

@@ -4,6 +4,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
+        headerShown: false,
         tabBarActiveTintColor: "#ffd33d",
         headerStyle: { backgroundColor: "#25292e" },
         headerShadowVisible: false,
@@ -14,6 +15,7 @@ export default function TabLayout() {
       <Tabs.Screen name="index" options={{ title: "Home" }} />;
       <Tabs.Screen name="Profile" options={{ title: "Profile" }} />;
       <Tabs.Screen name="ActivityFeed" options={{ title: "Feed" }} />;
+      <Tabs.Screen name="CreatePost" options={{ title: "Post" }} />;
     </Tabs>
   );
 }

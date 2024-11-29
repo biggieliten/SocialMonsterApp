@@ -24,6 +24,10 @@ export const styles = StyleSheet.create({
 
     backgroundColor: "#ACC18A",
   },
+  currentMonsterText: {
+    color: "white",
+    fontWeight: "600",
+  },
 });
 
 /*
