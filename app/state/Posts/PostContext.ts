@@ -6,6 +6,5 @@ export const PostContext = createContext<{
   state: Post[];
 
   //Replace the type any with type Action later
-
   dispatch: React.Dispatch<any>;
 }>({ state: posts, dispatch: () => null });
